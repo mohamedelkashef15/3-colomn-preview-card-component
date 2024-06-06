@@ -48,11 +48,17 @@ h2 {
   font-weight: 300;
 }
 .card .btn {
-  padding: 10px 15px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 25px;
   font-size: 14px;
   cursor: pointer;
+  border: 1px solid transparent;
+}
+.card .btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%) !important;
+  border: 1px solid hsl(0, 0%, 95%);
 }
 .card:first-child {
   border-top-left-radius: 10px;
