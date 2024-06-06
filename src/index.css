@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
-
 /*
 Transparent white (paragraphs):
 Very light gray (background, headings, buttons): 
@@ -9,18 +7,11 @@ Very light gray (background, headings, buttons):
 font-family: "Lexend Deca", sans-serif;
 font-family: "Big Shoulders Display", sans-serif;
 */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-$orange: hsl(31, 77%, 52%);
-$cyan: hsl(184, 100%, 22%);
-$dark-cyan: hsl(179, 100%, 13%);
-$transparent: hsla(0, 0%, 100%, 0.75);
-$light-gray: hsl(0, 0%, 95%);
 
 body {
   font-size: 15px;
@@ -34,7 +25,6 @@ h2 {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -44,36 +34,31 @@ h2 {
 
 .card {
   padding: 3rem;
-  h2 {
-    margin: 30px 0;
-    font-size: 40px;
-    color: $light-gray;
-    font-weight: 500;
-  }
-
-  p {
-    color: $transparent;
-    margin-bottom: 4rem;
-    line-height: 1.5;
-    font-weight: 300;
-  }
-
-  .btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    // background-color: $light-gray;
-  }
-
-  &:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-
-  &:last-child {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
 }
+.card h2 {
+  margin: 30px 0;
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+  font-weight: 500;
+}
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.card .btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.card:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.card:last-child {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}/*# sourceMappingURL=index.css.map */
